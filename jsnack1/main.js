@@ -1,12 +1,16 @@
-var firstNum = parseInt(prompt('Inserisci il primo numero'));
-var SecondNum = parseInt(prompt('Inserisci il secondo numero'));
+// L’utente inserisce due numeri in successione, con due
+// prompt. Il software stampa il maggiore.
 
-if (firstNum > SecondNum) {
+
+var firstNum = parseInt(prompt('Inserisci il primo numero'));
+var secondNum = parseInt(prompt('Inserisci il secondo numero'));
+
+if (firstNum > secondNum) {
   console.log('firstNum', firstNum);
   document.getElementById('result').innerHTML = firstNum;
-} else if (SecondNum > firstNum) {
-  console.log('SecondNum', SecondNum);
-  document.getElementById('result').innerHTML = SecondNum;
+} else if (secondNum > firstNum) {
+  console.log('secondNum', secondNum);
+  document.getElementById('result').innerHTML = secondNum;
 } else {
   console.log('Sono uguali', firstNum);
   document.getElementById('result').innerHTML = 'Sono uguali';
