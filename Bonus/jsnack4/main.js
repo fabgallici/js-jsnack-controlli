@@ -3,15 +3,8 @@ var listaNomi = ['Caio', 'Marco', 'Paolo', 'Gino', 'Luca'];
 
 var nomeUtente = prompt('Inserisci il tuo nome');
 
-var i = 0;
-var found = false;
-while (i < listaNomi.length || found === true) {
-  if (nomeUtente === listaNomi[i]) {
-    console.log('Puoi partecipare');
-    found = true;
-  }
-  i++
-};
-if (!found) {
+if (listaNomi.includes(nomeUtente)) {
+  console.log('Puoi partecipare');
+} else {
   console.log('Non sei invitato');
 }
